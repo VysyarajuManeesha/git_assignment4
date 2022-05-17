@@ -1,0 +1,106 @@
+  465  ls
+  466  mkdir ass4
+  467  git init
+  468  ls -al
+  469  rm .git
+  470  rm -r .git
+  471  ls -al
+  472  clear
+  473  cd ass4
+  474  ls -al
+  475  git init
+  476  ls -al
+  477  echo "writing file in master" > master.txt
+  478  cat master.txt 
+  479  ls
+  480  git status
+  481  git add .
+  482  git commit -m "1st commit - master"
+  483  ls
+  484  git status
+  485  git branch
+  486  git branch public1
+  487  git branch public2
+  488  git branch public3
+  489  git branch
+  490  git branch -D public3
+  491  git branch private
+  492  git branch
+  493  git checkout public1
+  494  ls
+  495  echo "writing public1 file " > public1.txt
+  496  git status
+  497  git add .
+  498  git commit -m "2nd commit - public1"
+  499  ls
+  500  git checkout public2
+  501  ls
+  502  echo "writing public2 file " > public2.txt
+  503  ls
+  504  git status
+  505  git add .
+  506  git commit -m "3rd commit - public2"
+  507  git status
+  508  ls
+  509  git checkout master
+  510  git status
+  511  git branch
+  512  ls
+  513  git merge public1
+  514  ls
+  515  git merge public2
+  516  ls
+  517  git log --oneline --graph
+  518  git checkout private
+  519  ls
+  520  vim master.txt
+  521  ls
+  522  git status
+  523  git add .
+  524  git commit -m "4th commit - private"
+  525  git status
+  526  ls
+  527  git log --oneline --graph
+  528  git branch
+  529  git checkout public1
+  530  ls
+  531  git merge private
+  532  ls
+  533  git log --oneline --graph
+  534  ls
+  535  cat master.txt 
+  536  git status
+  537  git checkout public2
+  538  ls
+  539  cat master.txt 
+  540  git merge private
+  541  ls
+  542  cat master.txt 
+  543  git status
+  544  git log --oneline --graph
+  545  git checkout master
+  546  ls
+  547  cat master.txt 
+  548  git merge private
+  549  ls
+  550  cat master.txt 
+  551  git status
+  552  git log --oneline --graph
+  553  git checkout private
+  554  ls
+  555  git merge public2
+  556  ls
+  557  git merge public1
+  558  l
+  559  ls
+  560  git merge master
+  561  ls
+  562  git status
+  563  git log --oneline --graph
+  564  git branch
+  565  git remote add origin https://github.com/VysyarajuManeesha/git_assignment4.git
+  566  git remote -v
+  567  git push origin master
+  568  git push origin public1
+  569  git push origin public2
+  570  git push origin private
